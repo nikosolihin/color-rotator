@@ -1,5 +1,16 @@
+/**
+ * Selectors
+ */
 const button = document.querySelector('.button');
+const counter = document.querySelector('.counter');
+const box = document.querySelectorAll('.box');
 
-const hide = e => (e.target.style.display = 'none');
+/**
+ * Handlers
+ */
+const log = e => console.log('You click me!');
 
-button.addEventListener('click', hide);
+/**
+ * Listeners
+ */
+button.addEventListener('click', log);
