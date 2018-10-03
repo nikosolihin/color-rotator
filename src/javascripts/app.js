@@ -1,5 +1,5 @@
 /**
- * Selectors
+ * Selectors & Vars
  */
 const button = document.querySelector('.button');
 const counter = document.querySelector('.counter');
