@@ -27,12 +27,12 @@ $orange: #db6d2a !default;
 $purple: #522e3f !default;
 
 :root {
-  --peach: $peach;
-  --blue: $blue;
-  --green: $green;
-  --navy: $navy;
-  --yellow: $yellow;
-  --orange: $orange;
+  --peach: #{$peach};
+  --blue: #{$blue};
+  --green: #{$green};
+  --navy: #{$navy};
+  --yellow: #{$yellow};
+  --orange: #{$orange};
 }
 
 /******************************
