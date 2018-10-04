@@ -17,8 +17,7 @@ $body: $gray-900 !default;
 $line: $gray-200 !default;
 
 // Others
-$red: #ec3323 !default;
-$peach: #e96e4f !default;
+$red: #e96e4f !default;
 $blue: #4085bf !default;
 $green: #59bb84 !default;
 $navy: #000f40 !default;
@@ -27,7 +26,7 @@ $orange: #db6d2a !default;
 $purple: #522e3f !default;
 
 :root {
-  --peach: #{$peach};
+  --red: #{$red};
   --blue: #{$blue};
   --green: #{$green};
   --navy: #{$navy};
