@@ -11,7 +11,7 @@ const boxes = document.querySelectorAll('.box');
 // Colors
 const css = getComputedStyle(document.body);
 const colors = [
-  css.getPropertyValue('--red'),
+  css.getPropertyValue('--peach'),
   css.getPropertyValue('--blue'),
   css.getPropertyValue('--green'),
   css.getPropertyValue('--navy'),
@@ -30,7 +30,7 @@ const increaseIndexAndTotal = () => {
 const increaseTotal = () => {
   total += 1;
   counter.textContent = total;
-  counter.style.background = colors[total];
+  counter.style.background = currentIndex ? colors[currentIndex - 1] : colors[5];
   counter.style.marginTop = `${total * 35}px`;
 };
 
