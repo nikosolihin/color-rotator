@@ -11,7 +11,7 @@ const boxes = document.querySelectorAll('.box');
 // Colors
 const css = getComputedStyle(document.body);
 const colors = [
-  css.getPropertyValue('--peach'),
+  css.getPropertyValue('--red'),
   css.getPropertyValue('--blue'),
   css.getPropertyValue('--green'),
   css.getPropertyValue('--navy'),
