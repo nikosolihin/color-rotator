@@ -20,8 +20,14 @@ const colors = [
 ];
 
 /**
- * Handlers
+ * Functions
  */
+const activateBox = () => {
+  const activeBox = document.querySelector(`.${active}`);
+  if (activeBox) activeBox.classList.remove(active);
+  boxes[currentIndex].classList.add(active);
+};
+
 const increaseIndexAndTotal = () => {
   currentIndex += 1;
   currentIndex %= boxes.length;
@@ -34,12 +40,9 @@ const increaseTotal = () => {
   counter.style.marginTop = `${total * 35}px`;
 };
 
-const activateBox = () => {
-  const activeBox = document.querySelector(`.${active}`);
-  if (activeBox) activeBox.classList.remove(active);
-  boxes[currentIndex].classList.add(active);
-};
-
+/**
+ * Handlers
+ */
 const handleButtonPress = ({ type, keyCode }) => {
   if (type === 'click' || keyCode === 32) {
     activateBox();
