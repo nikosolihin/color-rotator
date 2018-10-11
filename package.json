@@ -1,9 +1,12 @@
 {
-  "name": "start-here",
+  "name": "color-rotator",
   "version": "0.1.0",
   "scripts": {
     "start": "blendid",
     "build": "blendid build"
+  },
+  "now": {
+    "alias": "color-rotator"
   },
   "dependencies": {
     "axios": "^0.18.0",

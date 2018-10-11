@@ -40,22 +40,16 @@ const activateBox = () => {
   boxes[currentIndex].classList.add(active);
 };
 
-const handleSpacebar = ({ keyCode }) => {
-  if (keyCode === 32) {
+const handleButtonPress = ({ type, keyCode }) => {
+  if (type === 'click' || keyCode === 32) {
     activateBox();
     increaseIndexAndTotal();
     increaseTotal();
   }
 };
 
-const handleClick = e => {
-  activateBox();
-  increaseIndexAndTotal();
-  increaseTotal();
-};
-
 /**
  * Listeners
  */
-document.addEventListener('keydown', handleSpacebar);
-button.addEventListener('click', handleClick);
+document.addEventListener('keydown', handleButtonPress);
+button.addEventListener('click', handleButtonPress);
